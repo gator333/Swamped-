@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <title>SwampGator Scanner</title>
+  <style>
+    body {
+      margin:0; padding:0;
+      background: url('https://i.imgur.com/8Km9tLL.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #dfe6e9;
+      font-family: 'Arial', sans-serif;
+    }
+    header {
+      background: rgba(0,0,0,0.5);
+      padding: 1rem; text-align: center;
+    }
+    h1 { margin:0; font-size: 2rem; }
+    #configPanel, #log-box, #scannerContainer {
+      background: rgba(0,0,0,0.6);
+      margin: 1rem; padding: 1rem; border-radius: 8px;
+    }
+    button { padding: 0.5rem 1rem; margin:0.3rem; }
+    table { width:100%; border-collapse: collapse; margin-top:1rem;}
+    th, td { padding:0.5rem; border:1px solid #444; }
+    th { cursor: pointer; background: #2d3436; }
+    .green { color:#00b894; } .red { color:#d63031; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌅 SwampGator Scanner</h1>
+    <p>Sunrise on the bayou, hunting the next crypto pop.</p>
+  </header>
+  <div id="configPanel"></div>
+  <div id="log-box"></div>
+  <div id="scannerContainer"></div>
+
+  <script src="config.js"></script>
+  <script src="kraken_mapper.js"></script>
+  <script src="scanner_core.js"></script>
+  <script src="ui_tracker_module.js"></script>
+  <script src="config_ui_module.js"></script>
+  <script src="future_indicators_todo.js"></script>
+  <script src="kraken_ws_flagged_tracker.js"></script>
+</body>
+</html>
